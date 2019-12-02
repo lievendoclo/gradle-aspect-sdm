@@ -14,8 +14,22 @@
  * limitations under the License.
  */
 
-import { configureAspects } from "@atomist/sdm-pack-aspect";
-import { LicenseAspect } from "./lib/license";
+import {
+    configureAspects,
+    enrich,
+} from "@atomist/sdm-pack-aspect";
+import { Aspect } from "@atomist/sdm-pack-fingerprint";
+import { GradleDirectDependencies } from "@atomist/sdm-pack-gradle-aspect";
 
 // Main entry point into the SDM
-export const configuration = configureAspects(LicenseAspect);
+const aspects: Aspect[] = [
+    enrich(GradleDirectDependencies, {
+        shortName: "gradle-dependency",
+        category: "Java",
+        unit: "version",
+        url: "drift?type=gradle-direct-dep&band=true&repos=false",
+        description: "Gradle declared dependencies in use across all repositories in your workspace, " +
+            "grouped by Drift Level.",
+    }),
+];
+export const configuration = configureAspects(aspects);

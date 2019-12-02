@@ -24,15 +24,16 @@
   "main": "./index.js",
   "types": "./index.d.ts",
   "dependencies": {
-    "@atomist/automation-client": "^1.7.0",
-    "@atomist/sdm": "^1.7.0",
-    "@atomist/sdm-core": "^1.7.0",
-    "@atomist/sdm-pack-aspect": "^1.0.0-master.20190930134724",
-    "@atomist/sdm-pack-fingerprint": "5.0.1-master.20190915182018",
+    "@atomist/automation-client": "^1.8.0-master.20191121010001",
+    "@atomist/sdm": "^1.8.0-master.20191111174038",
+    "@atomist/sdm-core": "^1.8.0-master.20191104170555",
+    "@atomist/sdm-pack-aspect": "^1.0.0-master.20191114212211",
+    "@atomist/sdm-pack-fingerprint": "^5.0.1-master.20191006120505",
+    "@atomist/sdm-pack-gradle-aspect": "0.1.0-master.20191202134622",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "@atomist/sdm-local": "^1.2.1",
+    "@atomist/sdm-local": "^1.2.2-master.20191011215150",
     "@types/mocha": "^5.2.7",
     "@types/power-assert": "^1.5.0",
     "espower-typescript": "^9.0.2",
