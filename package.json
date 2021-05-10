@@ -30,7 +30,7 @@
     "@atomist/sdm-pack-aspect": "^1.0.0-master.20191114212211",
     "@atomist/sdm-pack-fingerprint": "^5.0.1-master.20191006120505",
     "@atomist/sdm-pack-gradle-aspect": "0.1.0-master.20191202134622",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@atomist/sdm-local": "^1.2.2-master.20191011215150",
